@@ -1,0 +1,12 @@
+version: "3.8"
+
+services:
+  server:
+    image: mye_scheduler:v1
+    build: .
+    container_name: mye_scheduler_c
+    volumes:
+      - .:/app
+      - /app/node_modules
+    ports:
+      - 3001:3001

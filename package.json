@@ -1,0 +1,45 @@
+{
+  "name": "mye-scheduler",
+  "version": "0.0.1",
+  "description": "Schedule channels endpoints",
+  "main": "server.js",
+  "scripts": {
+    "dev": "nodemon src/server",
+    "start": "npm run build && node dist/server",
+    "build": "node esbuild.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/westacebd/mye-scheduler.git"
+  },
+  "keywords": [
+    "e-commerce",
+    "channel",
+    "scheduler",
+    "mye"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/westacebd/mye-scheduler/issues"
+  },
+  "homepage": "https://github.com/westacebd/mye-scheduler#readme",
+  "dependencies": {
+    "axios": "^0.24.0",
+    "cors": "^2.8.5",
+    "dayjs": "^1.11.5",
+    "express": "^4.17.1",
+    "mongoose": "^7.4.2",
+    "morgan": "^1.10.0",
+    "pino": "^8.4.2",
+    "pino-pretty": "^9.1.0",
+    "toad-scheduler": "^1.6.0",
+    "yup": "^0.32.11"
+  },
+  "devDependencies": {
+    "concurrently": "^6.3.0",
+    "dotenv": "^10.0.0",
+    "esbuild": "^0.14.34",
+    "nodemon": "^2.0.14"
+  }
+}
